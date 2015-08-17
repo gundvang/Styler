@@ -1,9 +1,24 @@
 # Styler (in development)
-Easily create interactive sites with keyboard, mouse and touch support.
+Add extended unit types to you inline styling.
 
 
 ## Requirements
-Theatrix requires [jQuery](https://jquery.com/) (2.1.4 minimum) for its functionality to work correctly.
+Styler requires [jQuery](https://jquery.com/) (2.1.4 minimum) for its functionality to work correctly.
+
+
+## Usage
+
+`ww` = Window Width  
+`wh` = Window Height  
+`dw` = Document Width
+
+##### `data-styler`
+styling written in this data-tag will be converted to inline-styling according to the unit type specified.
+
+
+##### `data-styler-target`
+Used for styling according to a target elements width or height. (value should be the id of an existing element)
+
 
 ```
 <div class="text" data-styler="width: 50dw;">Document Width</div>
@@ -24,8 +39,7 @@ Theatrix requires [jQuery](https://jquery.com/) (2.1.4 minimum) for its function
 <div class="text" data-styler="width: 100eh;" data-styler-target="parent">Target Height</div>
 ```
 
-
-## Usage
+## Initialize Styler
 
 ```
 Styler.init()
