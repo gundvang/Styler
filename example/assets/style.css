@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Verdana, Arial, sans-serif;
+	overflow-x: hidden;
 }
 
 .parent {
@@ -23,4 +24,12 @@ hr {
 	background-color: #445566;
 	border: 0;
 	height: 1px;
+}
+
+h1 {
+	text-align: center;
+	color: #445566;
+	font-size: 1.25em;
+	line-height: 1em;
+	margin: 1.25em 0 0;
 }

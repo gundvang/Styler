@@ -4,9 +4,6 @@ var styler = {
 		documentation: 'https://github.com/gundvang/styler',
 	},
 	enabled: true,
-	data: {},
-	settings: {
-	},
 };
 
 styler.size = function() {
@@ -17,8 +14,13 @@ styler.size = function() {
 		for (i = 0; i < styler.length; i++) {
 			var style = styler[i].split(':')[0];
 			var value = styler[i].split(':')[1];
+
 			if (!style || !value) {	continue; }
-		    if (value.indexOf('tw') > -1) { // tw = percent of this element width
+
+			style = style.trim();
+			value = value.trim();
+
+			if (value.indexOf('tw') > -1) { // tw = percent of this element width
 		    	css[style] = (value.replace('tw', '') / 100) * $(this).width() + 'px';
 		    } else if (value.indexOf('th') > -1) { // th = percent of this element height
 		    	css[style] = (value.replace('th', '') / 100) * $(this).height() + 'px';
