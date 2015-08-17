@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Styler example</title>
+		<link type="text/css" rel="stylesheet" href="assets/style.css" />
+	</head>
+	<body>
+
+		<div class="text" data-styler="width: 50dw;" id="text">Document Width</div>
+		<div class="text" data-styler="width: 50dh;">Document Height</div>
+		<hr>
+		<div class="text" data-styler="width: 100ww;">Window Width</div>
+		<div class="text" data-styler="width: 100wh;">Window Height</div>
+		<hr>
+		<div class="text" data-styler="width: 100tw;">This Width</div>
+		<div class="text" data-styler="width: 100th;">This Height</div>
+		<hr>
+		<div class="parent" id="parent">
+			<div class="text" data-styler="width: 100pw;">Parent Width</div>
+			<div class="text" data-styler="width: 100ph;">Parent Height</div>
+		</div>
+		<hr>
+		<div class="text" data-styler="width: 100ew;" data-styler-target="parent">Target Width</div>
+		<div class="text" data-styler="width: 100eh;" data-styler-target="parent">Target Height</div>
+		
+		<script type="text/javascript" src="vendors/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../styler.js"></script>
+		<script type="text/javascript" src="assets/script.js"></script>
+		
+	</body>
+</html>
