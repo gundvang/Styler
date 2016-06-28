@@ -1,0 +1,30 @@
+{
+  "name": "styler",
+  "version": "1.0.0",
+  "description": "Add extended unit types to you inline styling.",
+  "main": "styler.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gundvang/Styler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gundvang/Styler/issues"
+  },
+  "homepage": "https://github.com/gundvang/Styler#readme"
+}
