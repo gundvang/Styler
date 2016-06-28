@@ -12,12 +12,12 @@ Styler requires [jQuery](https://jquery.com/) (2.1.4 minimum) for its functional
 `wh` = Window Height  
 `dw` = Document Width  
 `dh` = Document Height  
-`tw` = This Width  
-`th` = This Height  
+`ew` = Element Width  
+`eh` = Element Height  
 `pw` = Parent Width  
 `ph` = Parent Height  
-`ew` = Element Width  
-`eh` = Element Height
+`tw` = Target Element Width  
+`th` = Target Element Height
 
 
 ### Data tags
@@ -49,8 +49,8 @@ Used for styling according to a target elements width or height. (value should b
 </div>
 ```
 ```
-<div class="text" data-styler="width: 100ew;" data-styler-target="target">Target Width</div>
-<div class="text" data-styler="width: 100eh;" data-styler-target="target">Target Height</div>
+<div class="text" data-styler="width: 100tw;" data-styler-target="target">Target Width</div>
+<div class="text" data-styler="width: 100th;" data-styler-target="target">Target Height</div>
 ```
 
 ## Initialize Styler

@@ -20,26 +20,26 @@ styler.size = function() {
 			style = style.trim();
 			value = value.trim();
 
-			if (value.indexOf('tw') > -1) { // tw = percent of this element width
-		    	css[style] = (value.replace('tw', '') / 100) * $(this).width() + 'px';
-		    } else if (value.indexOf('th') > -1) { // th = percent of this element height
-		    	css[style] = (value.replace('th', '') / 100) * $(this).height() + 'px';
-		    } else if (value.indexOf('ww') > -1) { // ww = percent of window element width
+			if (value.indexOf('ew') > -1) { // ew = percent of the elements width
+		    	css[style] = (value.replace('ew', '') / 100) * $(this).width() + 'px';
+		    } else if (value.indexOf('eh') > -1) { // eh = percent of the elements height
+		    	css[style] = (value.replace('eh', '') / 100) * $(this).height() + 'px';
+		    } else if (value.indexOf('ww') > -1) { // ww = percent of window width
 		    	css[style] = (value.replace('ww', '') / 100) * $(window).width() + 'px';
-		    } else if (value.indexOf('wh') > -1) { // wh = percent of window element height
+		    } else if (value.indexOf('wh') > -1) { // wh = percent of window height
 		    	css[style] = (value.replace('wh', '') / 100) * $(window).height() + 'px';
-		    } else if (value.indexOf('dw') > -1) { // ww = percent of window element width
+		    } else if (value.indexOf('dw') > -1) { // dw = percent of document width
 		    	css[style] = (value.replace('dw', '') / 100) * $(document).width() + 'px';
-		    } else if (value.indexOf('dh') > -1) { // wh = percent of window element height
+		    } else if (value.indexOf('dh') > -1) { // dh = percent of document height
 		    	css[style] = (value.replace('dh', '') / 100) * $(document).height() + 'px';
-		    } else if (value.indexOf('pw') > -1) { // pw = percent of parent element width
+		    } else if (value.indexOf('pw') > -1) { // pw = percent of the parent elements width
 		    	css[style] = (value.replace('pw', '') / 100) * $(this).parent().width() + 'px';
-		    } else if (value.indexOf('ph') > -1) { // ph = percent of parent element height
+		    } else if (value.indexOf('ph') > -1) { // ph = percent of the parent elements height
 		    	css[style] = (value.replace('ph', '') / 100) * $(this).parent().height() + 'px';
-		    } else if (value.indexOf('ew') > -1 && $('#'+$(this).data('styler-target')).length) {
-		    	css[style] = (value.replace('ew', '') / 100) * $('#'+$(this).data('styler-target')).width() + 'px';
-		    } else if (value.indexOf('eh') > -1 && $('#'+$(this).data('styler-target')).length) {
-		    	css[style] = (value.replace('eh', '') / 100) * $('#'+$(this).data('styler-target')).height() + 'px';
+		    } else if (value.indexOf('tw') > -1 && $('#'+$(this).data('styler-target')).length) { // tw = percent of target elements width
+		    	css[style] = (value.replace('tw', '') / 100) * $('#'+$(this).data('styler-target')).width() + 'px';
+		    } else if (value.indexOf('th') > -1 && $('#'+$(this).data('styler-target')).length) { // th = percent of target elements height
+		    	css[style] = (value.replace('th', '') / 100) * $('#'+$(this).data('styler-target')).height() + 'px';
 		    }
 		}
 		$(this).css( css );
