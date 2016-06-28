@@ -9,7 +9,7 @@ var styler = {
 styler.size = function() {
 	var elements = document.querySelectorAll('[data-styler]');
 	
-	[].forEach.call(elements, function( el ) {
+	[].forEach.call(elements, function(el) {
 		var styler = el.dataset.styler.split(';'),
 			css = {};
 		
@@ -44,13 +44,14 @@ styler.size = function() {
 				css[style] = ((value.replace('th', '') / 100) * document.querySelectorAll('#'+el.dataset.stylerTarget).offsetHeight) + 'px';
 			}
 		}
-		$(this).css( css );
+		$(this).css(css);
 	});
 };
 
+var onresize = window.onresize = function() {
+	styler.size;
+};
+
 styler.init = function() {
-	var onresize = window.onresize = function() {
-		styler.size;
-	};
 	onresize();
-}
+};
