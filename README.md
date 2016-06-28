@@ -1,9 +1,9 @@
-# Styler (in development)
-Add extended unit types to you inline styling.
+# StylerJS (in development)
+StylerJS makes it possible to add extended unit types to your inline styling.
 
 
 ## Requirements
-Styler requires [jQuery](https://jquery.com/) (2.1.4 minimum) for its functionality to work correctly.
+StylerJS requires [jQuery](https://jquery.com/) (2.1.4 minimum) for its functionality to work correctly.
 
 
 ## Units
@@ -53,8 +53,8 @@ Used for styling according to a target elements width or height. (value should b
 <div class="text" data-styler="width: 100th;" data-styler-target="target">Target Height</div>
 ```
 
-## Initialize Styler
+## Initialize StylerJS
 
 ```
-Styler.init();
+styler.init();
 ```
